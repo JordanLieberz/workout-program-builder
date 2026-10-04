@@ -1,0 +1,36 @@
+/* Reset default browser margins and set box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom CSS Variables for your Stoic / Parchment Theme */
+:root {
+  --bg-color: #d8d3c5;           /* Main parchment background color */
+  --card-bg: #ece8dd;          /* Lighter tone for panels and containers */
+  --text-primary: #2b2b28;      /* Dark charcoal for main text and headings */
+  --text-secondary: #5c5a53;    /* Muted grey/brown for captions and quotes */
+  --border-color: #8c887b;      /* Slate grey for subtle borders */
+  --button-bg: #3a3935;        /* Dark slate button background */
+  --button-hover: #1f1e1c;     /* Near-black button hover color */
+  --font-serif: "Georgia", "Times New Roman", serif; /* Classical serif typography */
+  --font-sans: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
